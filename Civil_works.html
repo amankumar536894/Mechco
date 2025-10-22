@@ -415,9 +415,9 @@
                 <path
                   d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
                 </path>
-              </svg> Core Team's </a>
+              </svg> Civil Works </a>
             <div class="space24"></div>
-            <h1>Core Team's </h1>
+            <h1>Civil Works </h1>
           </div>
         </div>
       </div>
@@ -425,310 +425,675 @@
   </div>
 
 
+<!--===== FIRE PROTECTION SERVICES SECTION STARTS =======-->
 
-<!--===== CORE TEAM SECTION STARTS =======-->
-<div class="core-team-section sp2">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 m-auto">
-                <div class="section-heading text-center">
-                    <h5>MEET OUR LEADERS</h5>
-                    <div class="space20"></div>
-                    <h2 class="text-anime-style-3">Our Core Leadership Team</h2>
-                    <div class="space16"></div>
-                    <p class="section-subtitle">Experienced professionals driving MECHCO's vision of excellence</p>
+    <style>
+        :root {
+            --primary: #1a56db;
+            --primary-dark: #1e429f;
+            --secondary: #047857;
+            --accent: #f59e0b;
+            --light: #f8fafc;
+            --dark: #1e293b;
+            --gray: #64748b;
+            --border: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f9fafb;
+        }
+        
+        .civil-works-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+        }
+        
+        .section-heading {
+            margin-bottom: 60px;
+        }
+        
+        .section-heading h5 {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        
+        .section-heading h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .civil-works-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .civil-works-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            gap: 15px;
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .service-icon svg {
+            width: 32px;
+            height: 32px;
+            color: white;
+        }
+        
+        .service-badge {
+            background: rgba(26, 86, 219, 0.1);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .service-content h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        .service-description {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--gray);
+            margin-bottom: 25px;
+        }
+        
+        .service-specs {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+        
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .spec-item:last-child {
+            border-bottom: none;
+        }
+        
+        .spec-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--dark);
+            flex: 0 0 40%;
+        }
+        
+        .spec-value {
+            font-size: 14px;
+            color: var(--primary);
+            font-weight: 500;
+            text-align: right;
+            flex: 0 0 58%;
+        }
+        
+        .service-features {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .feature-icon {
+            width: 22px;
+            height: 22px;
+            background: rgba(26, 86, 219, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .feature-icon svg {
+            width: 12px;
+            height: 12px;
+            color: var(--primary);
+        }
+        
+        .feature-item span {
+            font-size: 14px;
+            color: var(--dark);
+            font-weight: 500;
+        }
+        
+        .service-applications h5 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+        
+        .application-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .app-tag {
+            background: var(--light);
+            color: var(--gray);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            border: 1px solid var(--border);
+        }
+        
+        .safety-compliance {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 16px;
+            padding: 40px;
+            color: white;
+            margin-top: 40px;
+        }
+        
+        .compliance-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .compliance-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .compliance-icon svg {
+            width: 35px;
+            height: 35px;
+            color: white;
+        }
+        
+        .compliance-text h4 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .compliance-text p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .compliance-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .compliance-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Card Color Variations */
+        .civil-works-card:nth-child(2) .service-icon {
+            background: linear-gradient(135deg, var(--secondary), #065f46);
+        }
+        
+        .civil-works-card:nth-child(2) .service-badge {
+            background: rgba(4, 120, 87, 0.1);
+            color: var(--secondary);
+        }
+        
+        .civil-works-card:nth-child(2) .spec-value {
+            color: var(--secondary);
+        }
+        
+        .civil-works-card:nth-child(2) .feature-icon {
+            background: rgba(4, 120, 87, 0.1);
+        }
+        
+        .civil-works-card:nth-child(2) .feature-icon svg {
+            color: var(--secondary);
+        }
+        
+        .civil-works-card:nth-child(3) .service-icon {
+            background: linear-gradient(135deg, var(--accent), #d97706);
+        }
+        
+        .civil-works-card:nth-child(3) .service-badge {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--accent);
+        }
+        
+        .civil-works-card:nth-child(3) .spec-value {
+            color: var(--accent);
+        }
+        
+        .civil-works-card:nth-child(3) .feature-icon {
+            background: rgba(245, 158, 11, 0.1);
+        }
+        
+        .civil-works-card:nth-child(3) .feature-icon svg {
+            color: var(--accent);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 991px) {
+            .civil-works-section {
+                padding: 80px 0;
+            }
+            
+            .civil-works-card {
+                padding: 25px;
+                margin-bottom: 30px;
+            }
+            
+            .section-heading h2 {
+                font-size: 36px;
+            }
+            
+            .compliance-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .civil-works-card {
+                padding: 20px;
+            }
+            
+            .service-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .service-content h3 {
+                font-size: 20px;
+            }
+            
+            .spec-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            
+            .spec-label, .spec-value {
+                flex: 0 0 100%;
+                text-align: left;
+            }
+            
+            .safety-compliance {
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .civil-works-card {
+                padding: 18px;
+            }
+            
+            .service-icon {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .service-icon svg {
+                width: 26px;
+                height: 26px;
+            }
+            
+            .section-heading h2 {
+                font-size: 32px;
+            }
+            
+            .application-tags, .compliance-badges {
+                justify-content: center;
+            }
+        }
+    </style>
+
+    <div class="civil-works-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 m-auto">
+                    <div class="section-heading text-center">
+                        <h5>OUR CIVIL WORKS EXPERTISE</h5>
+                        <h2>Civil Construction Works</h2>
+                        <p class="section-subtitle">Comprehensive civil construction solutions ensuring strength, durability, and quality as per engineering and safety standards.</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="space40"></div>
-
-        <div class="row">
-            <!-- Team Member 1 -->
-            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="400">
-                <div class="core-team-compact">
-                    <div class="team-avatar">
-                        <img src="assets/img/placerholder.png" alt="Rajesh Patel">
-                        <div class="team-badge">Founder</div>
-                    </div>
-                    <div class="team-info">
-                        <h6>Blank</h6>
-                        <p class="designation">Managing Director</p>
-                        <p class="experience">15+ Years Exp</p>
-                        <div class="team-specialty">
-                            <span class="specialty-tag">Strategy</span>
-                            <span class="specialty-tag">Leadership</span>
+            <div class="row">
+                <!-- Comprehensive Construction Solutions -->
+                <div class="col-lg-4 mb-4">
+                    <div class="civil-works-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17 2H21C21.5523 2 22 2.44772 22 3V21C22 21.5523 21.5523 22 21 22H3C2.44772 22 2 21.5523 2 21V3C2 2.44772 2.44772 2 3 2H7V0H9V2H15V0H17V2ZM4 8V20H20V8H4ZM6 10H18V12H6V10ZM6 14H14V16H6V14Z"/>
+                                </svg>
+                            </div>
+                            <div class="service-badge">Structural Development</div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 2 -->
-            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="500">
-                <div class="core-team-compact">
-                    <div class="team-avatar">
-                        <img src="assets/img/placerholder.png" alt="Amit Sharma">
-                        <div class="team-badge">MEP Expert</div>
-                    </div>
-                    <div class="team-info">
-                        <h6>Blank</h6>
-                        <p class="designation">Technical Director</p>
-                        <p class="experience">12+ Years Exp</p>
-                        <div class="team-specialty">
-                            <span class="specialty-tag">MEP</span>
-                            <span class="specialty-tag">BIM</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 3 -->
-            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="600">
-                <div class="core-team-compact">
-                    <div class="team-avatar">
-                        <img src="assets/img/placerholder.png" alt="Priya Mehta">
-                        <div class="team-badge">Operations</div>
-                    </div>
-                    <div class="team-info">
-                        <h6>Blank</h6>
-                        <p class="designation">Operations Head</p>
-                        <p class="experience">10+ Years Exp</p>
-                        <div class="team-specialty">
-                            <span class="specialty-tag">Projects</span>
-                            <span class="specialty-tag">Management</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 4 -->
-            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="700">
-                <div class="core-team-compact">
-                    <div class="team-avatar">
-                        <img src="assets/img/placerholder.png" alt="Sanjay Verma">
-                        <div class="team-badge">Finance</div>
-                    </div>
-                    <div class="team-info">
-                        <h6>Blank</h6>
-                        <p class="designation">Finance Director</p>
-                        <p class="experience">14+ Years Exp</p>
-                        <div class="team-specialty">
-                            <span class="specialty-tag">Finance</span>
-                            <span class="specialty-tag">Budget</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 5 -->
-            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="800">
-                <div class="core-team-compact">
-                    <div class="team-avatar">
-                        <img src="assets/img/placerholder.png" alt="Neha Patel">
-                        <div class="team-badge">HR</div>
-                    </div>
-                    <div class="team-info">
-                        <h6>Blank</h6>
-                        <p class="designation">HR Head</p>
-                        <p class="experience">8+ Years Exp</p>
-                        <div class="team-specialty">
-                            <span class="specialty-tag">HR</span>
-                            <span class="specialty-tag">Training</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 6 -->
-            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="900">
-                <div class="core-team-compact">
-                    <div class="team-avatar">
-                        <img src="assets/img/placerholder.png" alt="Rahul Joshi">
-                        <div class="team-badge">Design</div>
-                    </div>
-                    <div class="team-info">
-                        <h6>Blank</h6>
-                        <p class="designation">Design Head</p>
-                        <p class="experience">11+ Years Exp</p>
-                        <div class="team-specialty">
-                            <span class="specialty-tag">Design</span>
-                            <span class="specialty-tag">Architecture</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 7 -->
-            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1000">
-                <div class="core-team-compact">
-                    <div class="team-avatar">
-                        <img src="assets/img/placerholder.png" alt="Vikram Singh">
-                        <div class="team-badge">Quality</div>
-                    </div>
-                    <div class="team-info">
-                        <h6>Blank</h6>
-                        <p class="designation">Quality Head</p>
-                        <p class="experience">13+ Years Exp</p>
-                        <div class="team-specialty">
-                            <span class="specialty-tag">Quality</span>
-                            <span class="specialty-tag">Safety</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 8 -->
-            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1100">
-                <div class="core-team-compact">
-                    <div class="team-avatar">
-                        <img src="assets/img/placerholder.png" alt="Anita Reddy">
-                        <div class="team-badge">Procurement</div>
-                    </div>
-                    <div class="team-info">
-                        <h6>Blank</h6>
-                        <p class="designation">Procurement Head</p>
-                        <p class="experience">9+ Years Exp</p>
-                        <div class="team-specialty">
-                            <span class="specialty-tag">Procurement</span>
-                            <span class="specialty-tag">Vendor</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 9 -->
-            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1200">
-                <div class="core-team-compact">
-                    <div class="team-avatar">
-                        <img src="assets/img/placerholder.png" alt="Arun Kumar">
-                        <div class="team-badge">Electrical</div>
-                    </div>
-                    <div class="team-info">
-                        <h6>Blnak</h6>
-                        <p class="designation">Electrical Head</p>
-                        <p class="experience">12+ Years Exp</p>
-                        <div class="team-specialty">
-                            <span class="specialty-tag">Electrical</span>
-                            <span class="specialty-tag">Systems</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 10 -->
-            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1300">
-                <div class="core-team-compact">
-                    <div class="team-avatar">
-                        <img src="assets/img/placerholder.png" alt="Meera Shah">
-                        <div class="team-badge">Plumbing</div>
-                    </div>
-                    <div class="team-info">
-                        <h6>Blank</h6>
-                        <p class="designation">Plumbing Head</p>
-                        <p class="experience">10+ Years Exp</p>
-                        <div class="team-specialty">
-                            <span class="specialty-tag">Plumbing</span>
-                            <span class="specialty-tag">HVAC</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 11 -->
-            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1400">
-                <div class="core-team-compact">
-                    <div class="team-avatar">
-                        <img src="assets/img/placerholder.png" alt="Rohit Malhotra">
-                        <div class="team-badge">Civil</div>
-                    </div>
-                    <div class="team-info">
-                        <h6>Blank</h6>
-                        <p class="designation">Civil Head</p>
-                        <p class="experience">15+ Years Exp</p>
-                        <div class="team-specialty">
-                            <span class="specialty-tag">Civil</span>
-                            <span class="specialty-tag">Structure</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Member 12 -->
-            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1500">
-                <div class="core-team-compact">
-                    <div class="team-avatar">
-                        <img src="assets/img/placerholder.png" alt="Sneha Gupta">
-                        <div class="team-badge">Marketing</div>
-                    </div>
-                    <div class="team-info">
-                        <h6>Blank</h6>
-                        <p class="designation">Marketing Head</p>
-                        <p class="experience">7+ Years Exp</p>
-                        <div class="team-specialty">
-                            <span class="specialty-tag">Marketing</span>
-                            <span class="specialty-tag">BD</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="space40"></div>
-
-        <!-- Quick Stats -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="team-quick-stats">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="quick-stat">
-                                <div class="stat-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H9C7.9 1 7 1.9 7 3V7H5C3.9 7 3 7.9 3 9V14H5V22H11V16H13V22H19V14H21V9Z"/>
-                                    </svg>
+                        <div class="service-content">
+                            <h3>Comprehensive Construction Solutions</h3>
+                            <p class="service-description">
+                                End-to-end civil construction services covering design, development, and execution with quality and precision.
+                            </p>
+                            
+                            <div class="service-specs">
+                                <div class="spec-item">
+                                    <div class="spec-label">Project Type:</div>
+                                    <div class="spec-value">Residential, Commercial & Industrial Construction</div>
                                 </div>
-                                <div class="stat-content">
-                                    <h4>130+</h4>
-                                    <p>Total Experience</p>
+                                <div class="spec-item">
+                                    <div class="spec-label">Structure Strength:</div>
+                                    <div class="spec-value">Built for durability and load-bearing performance</div>
+                                </div>
+                                <div class="spec-item">
+                                    <div class="spec-label">Standards:</div>
+                                    <div class="spec-value">As per National Building Code & IS Specifications</div>
+                                </div>
+                            </div>
+                            
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                                        </svg>
+                                    </div>
+                                    <span>Foundation Works</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                                        </svg>
+                                    </div>
+                                    <span>Structural Framework</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                                        </svg>
+                                    </div>
+                                    <span>Masonry & Walls</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                                        </svg>
+                                    </div>
+                                    <span>Roofing & Flooring Systems</span>
+                                </div>
+                            </div>
+                            
+                            <div class="service-applications">
+                                <h5>Applications:</h5>
+                                <div class="application-tags">
+                                    <span class="app-tag">Commercial</span>
+                                    <span class="app-tag">Industrial</span>
+                                    <span class="app-tag">Residential</span>
+                                    <span class="app-tag">Water Supply & Drainage</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="quick-stat">
-                                <div class="stat-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M17 2H21C21.5523 2 22 2.44772 22 3V21C22 21.5523 21.5523 22 21 22H3C2.44772 22 2 21.5523 2 21V3C2 2.44772 2.44772 2 3 2H7V0H9V2H15V0H17V2ZM4 8V20H20V8H4ZM6 10H18V12H6V10ZM6 14H14V16H6V14Z"/>
-                                    </svg>
+                    </div>
+                </div>
+
+                <!-- Quality Materials & Workmanship -->
+                <div class="col-lg-4 mb-4">
+                    <div class="civil-works-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 7C13.6569 7 15 8.34315 15 10C15 11.6569 13.6569 13 12 13C10.3431 13 9 11.6569 9 10C9 8.34315 10.3431 7 12 7Z"/>
+                                </svg>
+                            </div>
+                            <div class="service-badge">Premium Quality</div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Quality Materials & Workmanship</h3>
+                            <p class="service-description">
+                                We ensure every project is built with premium materials and expert craftsmanship to deliver strength, safety, and long-term durability.
+                            </p>
+                            
+                            <div class="service-specs">
+                                <div class="spec-item">
+                                    <div class="spec-label">Residential Construction:</div>
+                                    <div class="spec-value">Ensuring long-lasting homes with top-grade materials</div>
                                 </div>
-                                <div class="stat-content">
-                                    <h4>800+</h4>
-                                    <p>Projects</p>
+                                <div class="spec-item">
+                                    <div class="spec-label">Commercial Projects:</div>
+                                    <div class="spec-value">Delivering strength and aesthetic appeal for offices</div>
+                                </div>
+                                <div class="spec-item">
+                                    <div class="spec-label">Industrial Structures:</div>
+                                    <div class="spec-value">Building durable facilities for heavy operations</div>
+                                </div>
+                            </div>
+                            
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                                        </svg>
+                                    </div>
+                                    <span>Premium Material Selection</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                                        </svg>
+                                    </div>
+                                    <span>Expert Craftsmanship</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                                        </svg>
+                                    </div>
+                                    <span>Strict Quality Control</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                                        </svg>
+                                    </div>
+                                    <span>Sustainable Practices</span>
+                                </div>
+                            </div>
+                            
+                            <div class="service-applications">
+                                <h5>Applications:</h5>
+                                <div class="application-tags">
+                                    <span class="app-tag">Residential Projects</span>
+                                    <span class="app-tag">Commercial Buildings</span>
+                                    <span class="app-tag">Industrial Constructions</span>
+                                    <span class="app-tag">Infrastructure Projects</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="quick-stat">
-                                <div class="stat-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 7C13.6569 7 15 8.34315 15 10C15 11.6569 13.6569 13 12 13C10.3431 13 9 11.6569 9 10C9 8.34315 10.3431 7 12 7Z"/>
-                                    </svg>
+                    </div>
+                </div>
+
+                <!-- Cost-Effective Execution -->
+                <div class="col-lg-4 mb-4">
+                    <div class="civil-works-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z"/>
+                                </svg>
+                            </div>
+                            <div class="service-badge">Smart Planning</div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Cost-Effective Execution</h3>
+                            <p class="service-description">
+                                Smart planning and resource optimization to deliver high-quality construction within budget and on time.
+                            </p>
+                            
+                            <div class="service-specs">
+                                <div class="spec-item">
+                                    <div class="spec-label">Budget Planning:</div>
+                                    <div class="spec-value">Detailed cost estimation for efficient spending</div>
                                 </div>
-                                <div class="stat-content">
-                                    <h4>50+</h4>
-                                    <p>Awards</p>
+                                <div class="spec-item">
+                                    <div class="spec-label">Resource Optimization:</div>
+                                    <div class="spec-value">Using materials and labor wisely to reduce waste</div>
+                                </div>
+                                <div class="spec-item">
+                                    <div class="spec-label">Time Efficiency:</div>
+                                    <div class="spec-value">Completing projects on schedule to save costs</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="quick-stat">
-                                <div class="stat-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H9C7.9 1 7 1.9 7 3V7H5C3.9 7 3 7.9 3 9V14H5V22H11V16H13V22H19V14H21V9Z"/>
-                                    </svg>
+                            
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                                        </svg>
+                                    </div>
+                                    <span>Residential Construction</span>
                                 </div>
-                                <div class="stat-content">
-                                    <h4>12</h4>
-                                    <p>Departments</p>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                                        </svg>
+                                    </div>
+                                    <span>Commercial Projects</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                                        </svg>
+                                    </div>
+                                    <span>Industrial Facilities</span>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                                        </svg>
+                                    </div>
+                                    <span>Infrastructure Development</span>
+                                </div>
+                            </div>
+                            
+                            <div class="service-applications">
+                                <h5>Note:</h5>
+                                <p class="service-description">
+                                    Efficient construction relies on careful budget planning, smart resource optimization, and strict time management to deliver high-quality projects on schedule and within cost.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- After-Completion Support -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="safety-compliance">
+                        <div class="compliance-content">
+                            <div class="compliance-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                </svg>
+                            </div>
+                            <div class="compliance-text">
+                                <h4>After-Completion Support</h4>
+                                <p>Reliable maintenance and repair services to ensure lasting performance and structural integrity even after project handover.</p>
+                                <div class="compliance-badges">
+                                    <span class="compliance-badge">Inspection</span>
+                                    <span class="compliance-badge">Repairs</span>
+                                    <span class="compliance-badge">Upgrades</span>
+                                    <span class="compliance-badge">Cleaning</span>
                                 </div>
                             </div>
                         </div>
@@ -737,205 +1102,10 @@
             </div>
         </div>
     </div>
-</div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<style>
-    /* Core Team Compact Section */
-.core-team-section {
-    background: #f8f9fa;
-   
-}
-
-.core-team-compact {
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-    margin-bottom: 30px;
-    border: 1px solid #f0f0f0;
-}
-
-.core-team-compact:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-}
-
-.team-avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 15px;
-    border: 3px solid #f0f0f0;
-    position: relative;
-}
-
-.team-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.team-badge {
-    position: absolute;
-    bottom: -5px;
-    right: -5px;
-    background: linear-gradient(135deg, #2c5aa0, #3a7bd5);
-    color: white;
-    padding: 4px 8px;
-    border-radius: 12px;
-    font-size: 10px;
-    font-weight: 600;
-    border: 2px solid white;
-    line-height: 1;
-}
-
-.team-info h6 {
-    font-size: 16px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 5px;
-    line-height: 1.2;
-}
-
-.designation {
-    font-size: 14px;
-    color: #2c5aa0;
-    font-weight: 600;
-    margin-bottom: 5px;
-    line-height: 1.2;
-}
-
-.experience {
-    font-size: 12px;
-    color: #666;
-    margin-bottom: 10px;
-    line-height: 1.2;
-}
-
-.team-specialty {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    flex-wrap: wrap;
-}
-
-.specialty-tag {
-    background: #e3f2fd;
-    color: #1565c0;
-    padding: 4px 8px;
-    border-radius: 12px;
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 1;
-}
-
-/* Quick Stats */
-.team-quick-stats {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-}
-
-.quick-stat {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.stat-icon {
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #2c5aa0, #3a7bd5);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.stat-icon svg {
-    width: 24px;
-    height: 24px;
-    color: white;
-}
-
-.stat-content h4 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #2c5aa0;
-    margin-bottom: 5px;
-    line-height: 1;
-}
-
-.stat-content p {
-    font-size: 14px;
-    color: #666;
-    margin: 0;
-    line-height: 1.2;
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .col-xl-3 {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }
-}
-
-@media (max-width: 992px) {
-    .col-xl-3, .col-lg-4 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-    
-    .core-team-section {
-        padding: 60px 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .col-xl-3, .col-lg-4, .col-md-6 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    
-    .core-team-compact {
-        max-width: 300px;
-        margin: 0 auto 30px;
-    }
-    
-    .quick-stat {
-        margin-bottom: 20px;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    .team-quick-stats {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 576px) {
-    .core-team-section .section-heading h2 {
-        font-size: 28px;
-    }
-    
-    .section-subtitle {
-        font-size: 16px;
-    }
-}
-</style>
-<!--===== CORE TEAM SECTION ENDS =======-->
-
-
-
-
- 
+<!--===== FIRE PROTECTION SERVICES SECTION ENDS =======-->
 
 
 
@@ -952,7 +1122,19 @@
 
 
 
- <!--===== FOOTER AREA STARTS =======-->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--===== FOOTER AREA STARTS =======-->
 <div class="footer1-section-area">
   <div class="container">
     <div class="row">

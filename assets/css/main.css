@@ -682,7 +682,7 @@ Location:
 .theme-btn1 {
   display: inline-block;
   padding: 14px 16.57px;
-  color: var(--ztc-text-text-2);
+  color: white;
   font-size: var(--ztc-font-size-font-s14);
   font-style: normal;
   font-weight: var(--ztc-weight-medium);
@@ -692,7 +692,7 @@ Location:
   font-family: var(--ztc-family-font1);
   border: none;
   overflow: hidden;
-  background-color: var(--ztc-bg-bg-3);
+  background-color: #2d3192;
   transition: all 0.4s;
   border-radius: 8px;
   position: relative;
@@ -706,7 +706,7 @@ Location:
   left: 0;
   top: 0;
   transition: all 0.4s;
-  background: var(--ztc-bg-bg-4);
+  background: red;
   width: 100%;
   border-radius: 6px;
   z-index: -1;
@@ -4747,7 +4747,7 @@ Location:
   width: 100%;
   left: 0;
   top: 0;
-  background: #073B3A;
+  background: blue;
   opacity: 60%;
   z-index: -1;
 }
@@ -7251,7 +7251,7 @@ Location:
   left: 0;
   top: 0;
   transition: all 0.4s;
-  background: var(--ztc-bg-bg-4);
+  background: #2d3192;
   z-index: -1;
 }
 .homepage1-body .header-area.homepage1 nav#navbar-example2 {
@@ -8844,8 +8844,8 @@ Location:
   }
 }
 .properties-section-area .property-feature-slider .tabs-btn-area ul li button.active {
-  background: var(--ztc-bg-bg-4);
-  color: var(--ztc-text-text-1);
+  background: red;
+  color: white;
   transition: all 0.4s;
 }
 .properties-section-area .property-feature-slider .tabs-btn-area ul li button svg {
@@ -8991,11 +8991,11 @@ Location:
 }
 .properties-section-area .property-feature-slider .property-boxarea .content-area .btn-area .nm-btn {
   border-radius: 8px;
-  background: var(--ztc-bg-bg-3);
+  background: blue;
   padding: 12px 16px;
   display: inline-block;
   transition: all 0.4s;
-  color: var(--ztc-text-text-2);
+  color: white;
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s16);
   font-style: normal;
@@ -20374,7 +20374,7 @@ Location:
   }
 }
 .items2-section-area .testimonial-arrows .testimonial-prev-arrow button:hover {
-  background: var(--ztc-text-text-6);
+  background: blue;
   transition: all 0.4s;
   color: var(--ztc-text-text-2);
 }
@@ -21537,6 +21537,7 @@ Location:
   z-index: 1;
   padding: 50px;
   border-radius: 16px;
+  margin-top: 40px;
 }
 @media (max-width: 767px) {
   .cta1-section-area .cta-bg-area {
